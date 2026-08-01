@@ -1,0 +1,10 @@
+node_modules/
+.env
+backend/.env
+backend/logs/*.log
+backend/uploads/paid/*
+backend/uploads/qr/*
+!backend/uploads/paid/.gitkeep
+!backend/uploads/qr/.gitkeep
+npm-debug.log*
+.DS_Store
