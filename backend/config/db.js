@@ -11,6 +11,9 @@ const pool = mysql.createPool({
   connectionLimit: 10,
   queueLimit: 0,
   dateStrings: true,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 // Sanity check on boot
@@ -21,9 +24,10 @@ const pool = mysql.createPool({
     conn.release();
     console.log('[DB] Kết nối MySQL thành công.');
   } catch (err) {
-    console.error('[DB] Không thể kết nối MySQL:', err.message);
+    console.error('[DB] Không thể kết nối MySQL:', err);
     process.exit(1);
   }
 })();
 
 module.exports = pool;
+
