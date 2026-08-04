@@ -2,7 +2,7 @@ const mysql = require('mysql2/promise');
 require('dotenv').config();
 
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'mysql-b4e858-nooblemon3030-8526.aivencloud.com',
+  host: process.env.DB_HOST || 'mysql-b4e858-nooblemon3030-8526.l.aivencloud.com',
   port: process.env.DB_PORT || 23993,
   user: process.env.DB_USER || 'avnadmin',
   password: process.env.DB_PASSWORD, // Nhớ chắc chắn đã điền DB_PASSWORD trên Render
