@@ -8,7 +8,8 @@
    chỉ đúng khi backend Node.js tự serve luôn file frontend (app.use(express.static(...))
    trong server.js), tức là chạy trên CHÍNH VPS đó, không phải GitHub Pages.
    ===================================================== */
-const API_BASE_URL = 'https://b496af1275a3da.lhr.life';
+const API_BASE_URL = 'https://d9f1b96d1e59eb.lhr.life
+';
 
 
 const state = {
